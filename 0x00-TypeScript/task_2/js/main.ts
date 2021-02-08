@@ -25,6 +25,26 @@ class Teacher implements TeacherInterface {
 
 const createEmployee = (salary: number | string): Teacher | Director => Number(salary) < 500 ? new Teacher() : new Director()
 
-console.log(createEmployee(200));
-console.log(createEmployee(1000));
-console.log(createEmployee('$500'));
+//console.log(createEmployee(200));
+//console.log(createEmployee(1000));
+//console.log(createEmployee('$500'));
+
+// 6. Creating functions specific to employees
+const isDirector = (employee: Director | Teacher): boolean => employee.workFromHome() === 'Working from home';
+
+const executeWork = (employee: Director | Teacher): string => {
+  let res = undefined, check = isDirector(employee);
+  if (isDirector(employee)) {
+    //res = employee.workFromHome();
+    res = employee.workDirectorTasks();
+    } else {
+      //res = employee.workFromHome();
+      res = employee.workTeacherTasks();
+    }
+    console.log(check)
+    console.log(res);
+    return res;
+}
+
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
