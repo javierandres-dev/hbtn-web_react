@@ -42,3 +42,29 @@ interface printTeacherFunction {
   printTeacher(fName: string, lName: string): string;
 };
 
+// 4. Writing a class
+interface ConstructorStudent {
+  new(firstName: string, lastName: string): ClassStudent;
+}
+
+interface ClassStudent {
+  firstName: string;
+  lastName: string;
+}
+
+class StudentClass implements ClassStudent {
+  firstName: string;
+  lastName: string;
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  workOnHomework() {
+    return 'Currently working';
+  }
+  displayName() {
+    return this.firstName;
+  }
+}
+
+console.log(printTeacher("John", "Doe"));
