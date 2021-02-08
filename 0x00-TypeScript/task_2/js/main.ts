@@ -23,7 +23,7 @@ class Teacher implements TeacherInterface {
   workTeacherTasks = () => 'Getting to work';
 }
 
-const createEmployee = (salary: number | string) => Number(salary) < 500 ? "Teacher" : "Director"
+const createEmployee = (salary: number | string): Teacher | Director => Number(salary) < 500 ? new Teacher() : new Director()
 
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
