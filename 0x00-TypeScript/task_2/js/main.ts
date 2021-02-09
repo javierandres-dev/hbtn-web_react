@@ -45,14 +45,12 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 //executeWork(createEmployee(1000));
 
 // 7. String literal types
-type Subjects = 'Math' | 'History';
+type Subjects = "Math" | "History";
 
-export function teachClass(todayClass: Subjects): string {
-  let res = undefined;
-  (todayClass === 'Math') ? res = 'Teaching Math' : res = 'Teaching History';
-  //console.log(res);
-  return res;
+export function teachClass(todayClass:Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else if (todayClass === "History") {
+    return "Teaching History";
+  }
 }
-
-//console.log(teachClass("Math"));
-//console.log(teachClass("History"));
