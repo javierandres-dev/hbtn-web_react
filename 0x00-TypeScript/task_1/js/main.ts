@@ -8,7 +8,7 @@ interface Teacher {
   location: string,
   [propName: string]: any;
 };
-/*
+
 const teacher3: Teacher = {
   firstName: 'John',
   fullTimeEmployee: false,
@@ -16,13 +16,13 @@ const teacher3: Teacher = {
   location: 'London',
   contract: false,
 };
-console.log(teacher3);
-*/
+//console.log(teacher3);
+
 // 2. Extending the Teacher class
 interface Directors extends Teacher {
   numberOfReports: number,
 };
-/*
+
 const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
@@ -30,8 +30,8 @@ const director1: Directors = {
   fullTimeEmployee: true,
   numberOfReports: 17,
 };
-console.log(director1);
-*/
+//console.log(director1);
+
 // 3. Printing teachers
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
@@ -42,29 +42,24 @@ export const printTeacher: printTeacherFunction = (firstName: string, lastName: 
 //console.log(printTeacher("John", "Doe"));
 
 // 4. Writing a class
-interface StudentConstructor {
-  new (firstName: string, lastName: string): StudentClassInterface;
+interface StudentClassConstructor {
+  new(firstName: string, lastName: string): StudentClassInterface;
 }
-
 interface StudentClassInterface {
-  workOnHomework(): string;
-  displayName(): string;
-}
-
-export class StudentClass implements StudentClassInterface {
   firstName: string;
   lastName: string;
-
+}
+class StudentClass implements StudentClassInterface {
+  firstName: string;
+  lastName: string;
   constructor(firstName: string, lastName: string) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
-
-  workOnHomework(): string {
-    return "Currently working";
+  workOnHomework() {
+    return 'Currently working';
   }
-
-  displayName(): string {
+  displayName() {
     return this.firstName;
   }
 }
