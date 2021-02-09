@@ -38,7 +38,12 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName.charAt(0)}. ${lastName}`;
+const printTeacher: printTeacherFunction = function (
+    firstName: string,
+    lastName: string
+): string {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
 
 // 4. Writing a class
 interface ConstructorStudent {
