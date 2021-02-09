@@ -54,5 +54,5 @@ export function teachClass(todayClass: Subjects): string {
   return res;
 }
 
-console.log(teachClass("Math"));
-console.log(teachClass("History"));
+//console.log(teachClass("Math"));
+//console.log(teachClass("History"));
