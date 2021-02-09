@@ -34,13 +34,11 @@ const director1: Directors = {
 console.log(director1);
 
 // 3. Printing teachers
-const printTeacher = (firstName: string, lastName: string) : string => {
-  return `${firstName[0]}. ${lastName}`;
-};
-
 interface printTeacherFunction {
-  printTeacher(fName: string, lName: string): string;
-};
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName.charAt(0)}. ${lastName}`;
 
 // 4. Writing a class
 interface ConstructorStudent {
