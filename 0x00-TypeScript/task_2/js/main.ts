@@ -48,13 +48,12 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 type Subjects = "Math" | "History";
 
 export function teachClass(todayClass: Subjects): string {
-  let res = "";
   if (todayClass === "Math") {
-    res = "Teaching Math";
-  } else if (todayClass === "History") {
-    res = "Teaching History";
+    return "Teaching Math";
   }
-  return res;
+  if (todayClass === "History") {
+    return "Teaching History";
+  }
 }
 
 //console.log(teachClass("Math"));
