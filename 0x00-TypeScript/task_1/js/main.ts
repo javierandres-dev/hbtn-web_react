@@ -64,4 +64,4 @@ class StudentClass implements ClassStudent {
   }
 }
 
-console.log(printTeacher("John", "Doe"));
+//console.log(printTeacher("John", "Doe"));
