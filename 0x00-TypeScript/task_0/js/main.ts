@@ -23,7 +23,7 @@ const secondSudent: Student = {
 
 const studentsList: Array<Student> = [ firstSudent, secondSudent ];
 
-const $body: HTMLBodyElement = document.getElementsByTagName("body");
+const $body: HTMLBodyElement = document.getElementsByTagName("body")[0];
 const $table: HTMLTableElement = document.createElement("table");
 const $thead: HTMLTableSectionElement = document.createElement("thead");
 const $tbody: HTMLTableSectionElement = document.createElement("tbody");
