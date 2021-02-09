@@ -30,8 +30,6 @@ export const createEmployee = (salary: number | string): Teacher | Director => N
 //console.log(createEmployee('$500'));
 
 // 6. Creating functions specific to employees
-//const isDirector = (employee: Director | Teacher): boolean => employee.workFromHome() === 'Working from home';
-
 const isDirector = (employee: TeacherInterface | DirectorInterface): employee is Director => (employee as Director).workDirectorTasks !== undefined;
 
 const executeWork = (employee: TeacherInterface | DirectorInterface): void => {
