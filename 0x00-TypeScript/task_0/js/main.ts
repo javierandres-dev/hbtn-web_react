@@ -22,44 +22,17 @@ const secondSudent: Student = {
 }
 
 const studentsList: Array<Student> = [ firstSudent, secondSudent ];
-/*
-const body: HTMLBodyElement  = document.querySelector('body');
-const $table = document.createElement('table');
+
+const $body: HTMLBodyElement  = document.querySelector('body');
+const $table: HTMLTableElement = document.createElement('table');
 
 studentsList.forEach((student: Student) => {
-  const row = $table.insertRow()
-  const $name = document.createElement('td');
-  const $location = document.createElement('td');
+  const $row: HTMLTableRowElement = $table.insertRow()
+  const $name: HTMLTableDataCellElement = document.createElement('td');
+  const $location: HTMLTableDataCellElement = document.createElement('td');
   $name.textContent = student.firstName;
   $location.textContent = student.location;
-  row.appendChild($name);
-  row.appendChild($location);
+  $row.appendChild($name);
+  $row.appendChild($location);
 });
-body.appendChild($table);
-*/
-const body: HTMLBodyElement = document.getElementsByTagName("body")[0];
-
-const table: HTMLTableElement = document.createElement("table");
-const thead: HTMLTableSectionElement = document.createElement("thead");
-const tbody: HTMLTableSectionElement = document.createElement("tbody");
-
-const rowHead: HTMLTableRowElement = thead.insertRow(0);
-const cell1Head: HTMLTableCellElement = rowHead.insertCell(0);
-const cell2Head: HTMLTableCellElement = rowHead.insertCell(1);
-
-cell1Head.innerHTML = "firstName";
-cell2Head.innerHTML = "location";
-
-table.append(thead);
-
-studentsList.forEach((student) => {
-  const row: HTMLTableRowElement = tbody.insertRow(0);
-  const cell1: HTMLTableCellElement = row.insertCell(0);
-  const cell2: HTMLTableCellElement = row.insertCell(1);
-
-  cell1.innerHTML = student.firstName;
-  cell2.innerHTML = student.location;
-});
-
-table.append(tbody);
-body.append(table);
+$body.appendChild($table);
