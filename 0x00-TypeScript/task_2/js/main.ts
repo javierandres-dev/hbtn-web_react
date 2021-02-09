@@ -35,7 +35,7 @@ export function isDirector(employee: TeacherInterface | DirectorInterface): empl
 }
 
 export function executeWork(employee: DirectorInterface | TeacherInterface): string {
-  let res;
+  let res = undefined;
   (isDirector(employee)) ? res = employee.workDirectorTasks() : res = employee.workTeacherTasks();
   //console.log(res);
   return res;
@@ -47,11 +47,12 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 // 7. String literal types
 type Subjects = 'Math' | 'History';
 
-export const teachClass = (todayClass: Subjects): string => {
+export function teachClass(todayClass: Subjects): string {
   let res = undefined;
   (todayClass === 'Math') ? res = 'Teaching Math' : res = 'Teaching History';
+  //console.log(res);
   return res;
 }
 
-// console.log(teachClass("Math"));
-// console.log(teachClass("History"));
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
