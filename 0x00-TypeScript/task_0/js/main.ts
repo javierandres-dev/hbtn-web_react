@@ -31,8 +31,8 @@ const $rowHead: HTMLTableRowElement = $thead.insertRow(0);
 const $cell1Head: HTMLTableCellElement = $rowHead.insertCell(0);
 const $cell2Head: HTMLTableCellElement = $rowHead.insertCell(1);
 
-$cell1Head.textContent = "firstName";
-$cell2Head.textContent = "location";
+$cell1Head.innerHTML  = "firstName";
+$cell2Head.innerHTML  = "location";
 $table.append($thead);
 
 studentsList.forEach((student: Student) => {
@@ -40,8 +40,8 @@ studentsList.forEach((student: Student) => {
   const $cell1: HTMLTableCellElement = $row.insertCell(0);
   const $cell2: HTMLTableCellElement = $row.insertCell(1);
 
-  $cell1.textContent = student.firstName;
-  $cell2.textContent = student.location;
+  $cell1.innerHTML  = student.firstName;
+  $cell2.innerHTML  = student.location;
 });
 
 $table.append($tbody);
