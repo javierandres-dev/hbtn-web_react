@@ -32,10 +32,11 @@ export const createEmployee = (salary: number | string): Teacher | Director => N
 // 6. Creating functions specific to employees
 export const isDirector = (employee: TeacherInterface | DirectorInterface): employee is Director => (employee as Director).workDirectorTasks !== undefined;
 
-export const executeWork = (employee: TeacherInterface | DirectorInterface): void => {
+export const executeWork = (employee: TeacherInterface | DirectorInterface): string => {
   let res = undefined;
   isDirector(employee) ? res = employee.workDirectorTasks() : res = employee.workTeacherTasks();
-  console.log(res);
+  //console.log(res);
+  return res;
 }
 
 //executeWork(createEmployee(200));
