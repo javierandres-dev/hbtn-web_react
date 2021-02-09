@@ -47,10 +47,16 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 // 7. String literal types
 type Subjects = "Math" | "History";
 
-export function teachClass(todayClass:Subjects): string {
+export const teachClass = (todayClass:Subjects): string => {
+  let res = "";
   if (todayClass === "Math") {
-    return "Teaching Math";
-  } else if (todayClass === "History") {
-    return "Teaching History";
+    res = "Teaching Math";
   }
+  if (todayClass === "History") {
+    res = "Teaching History";
+  }
+  return res;
 }
+
+//console.log(teachClass("Math"));
+//console.log(teachClass("History"));
