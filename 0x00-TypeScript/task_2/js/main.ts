@@ -47,7 +47,7 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 // 7. String literal types
 type Subjects = 'Math' | 'History';
 
-const teachClass = (todayClass: Subjects): string => {
+export const teachClass = (todayClass: Subjects): string => {
   let res = undefined;
   (todayClass === 'Math') ? res = 'Teaching Math' : res = 'Teaching History';
   return res;
