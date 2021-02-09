@@ -38,7 +38,7 @@ interface printTeacherFunction {
 }
 
 export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string =>`${firstName.charAt(0)}. ${lastName}`;
-/*
+
 // 4. Writing a class
 interface ConstructorStudent {
   new(firstName: string, lastName: string): ClassStudent;
@@ -49,7 +49,7 @@ interface ClassStudent {
   lastName: string;
 }
 
-class StudentClass implements ClassStudent {
+export class StudentClass implements ClassStudent {
   firstName: string;
   lastName: string;
   constructor(firstName: string, lastName: string) {
@@ -64,4 +64,4 @@ class StudentClass implements ClassStudent {
   }
 }
 
-console.log(printTeacher("John", "Doe"));*/
+console.log(printTeacher("John", "Doe"));
