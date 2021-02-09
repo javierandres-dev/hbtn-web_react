@@ -41,5 +41,17 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
   return res;
 }
 
-executeWork(createEmployee(200));
-executeWork(createEmployee(1000));
+//executeWork(createEmployee(200));
+//executeWork(createEmployee(1000));
+
+// 7. String literal types
+type Subjects = 'Math' | 'History';
+
+const teachClass = (todayClass: Subjects): string => {
+  let res = undefined;
+  (todayClass === 'Math') ? res = 'Teaching Math' : res = 'Teaching History';
+  return res;
+}
+
+// console.log(teachClass("Math"));
+// console.log(teachClass("History"));
