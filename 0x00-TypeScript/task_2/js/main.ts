@@ -34,7 +34,7 @@ export function isDirector(employee: TeacherInterface | DirectorInterface): empl
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
-export const executeWork = (employee: DirectorInterface | TeacherInterface): string => {
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
   let res;
   (isDirector(employee)) ? res = employee.workDirectorTasks() : res = employee.workTeacherTasks();
   //console.log(res);
