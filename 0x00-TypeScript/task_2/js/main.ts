@@ -36,11 +36,7 @@ export function isDirector(employee: TeacherInterface | DirectorInterface): empl
 
 export function executeWork(employee: DirectorInterface | TeacherInterface): string {
   let res;
-  if (isDirector(employee)) {
-    res = employee.workDirectorTasks();
-  } else {
-    res = employee.workTeacherTasks();
-  }
+  (isDirector(employee)) ? res = employee.workDirectorTasks() : res = employee.workTeacherTasks();
   //console.log(res);
   return res;
 }
