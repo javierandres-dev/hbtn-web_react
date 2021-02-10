@@ -22,6 +22,14 @@ module.exports = {
       filename: "public/index.html",
     }),
   ],
+  performance: {
+    maxAssetSize: 1000000,
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
   module: {
     rules: [
       {
@@ -35,13 +43,5 @@ module.exports = {
         },
       },
     ],
-  },
-  performance: {
-    maxAssetSize: 1000000,
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
   },
 };
