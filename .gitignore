@@ -5,3 +5,4 @@ package-lock.json
 yarn.lock
 venv/
 .env
+0x01-Webpack/task_0/dist/main.*
