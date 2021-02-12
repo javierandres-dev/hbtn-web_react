@@ -6,3 +6,4 @@ yarn.lock
 venv/
 .env
 0x01-Webpack/task_0/dist/main.*
+0x01-Webpack/task_2/public/bundle.*
