@@ -3,9 +3,9 @@ export const getFullYear = () => {
 };
 
 export const getFooterCopy = (isIndex) => {
-  if (isIndex) {
-    return 'Holberton School';
-  } else {
-    return 'Holberton School main dashboard';
-  }
+  let res = undefined;
+  isIndex
+    ? (res = 'Holberton School')
+    : (res = 'Holberton School main dashboard');
+  return res;
 };
