@@ -28,6 +28,7 @@ const Notifications = () => {
           background: 0,
           border: 0,
           outline: 'none',
+          cursor: 'pointer',
         }}
       >
         <img src={close_icon} alt='' style={{ width: '8px', height: '8px' }} />
