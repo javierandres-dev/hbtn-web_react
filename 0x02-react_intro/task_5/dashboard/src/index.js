@@ -1,2 +1,2 @@
 'use strict';
-console.log('working...');
+document.getElementById('root').textContent = 'working...';
