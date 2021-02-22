@@ -1,28 +1,17 @@
 import React from 'react';
 import './App.css';
-import logo from '../assets/holberton-logo.jpg';
-import { getFullYear, getFooterCopy } from '../utils/utils';
+import Header from '../Header/Header';
+import Login from '../Login/Login';
+import Footer from '../Footer/Footer';
+import Notifications from '../Notifications/Notifications';
 
 function App() {
   return (
     <>
-      <header className='App-header'>
-        <img src={logo} alt='logo' />
-        <h1>School dashboard</h1>
-      </header>
-      <main role='main' className='App-body'>
-        <p>Login to access the full dashboard</p>
-        <label htmlFor='email'>Email</label>
-        <input type='email' name='email' id='email' />
-        <label htmlFor='password'>Password</label>
-        <input type='password' name='password' id='password' />
-        <button type='button'>OK</button>
-      </main>
-      <footer className='App-footer'>
-        <p>
-          Copyright {getFullYear()} - {getFooterCopy(true)}
-        </p>
-      </footer>
+      <Notifications />
+      <Header />
+      <Login />
+      <Footer />
     </>
   );
 }
