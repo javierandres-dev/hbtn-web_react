@@ -7,6 +7,7 @@
 * [ ] 589 0x00. Typescript
 * [ ] 581 0x01. Webpack
 * [ ] 596 0x02. React intro
+* [ ] 597 0x03. React props
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
