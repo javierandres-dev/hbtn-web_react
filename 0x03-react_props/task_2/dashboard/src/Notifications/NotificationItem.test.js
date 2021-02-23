@@ -2,16 +2,23 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NotificationItem from './NotificationItem';
 
+describe('testing', () => {
+  it('renders without crashing', () => {
+    const wrapper = shallow(<NotificationItem />);
+    expect(wrapper.exists());
+  });
+});
+
+/*
+
 const wrapper = shallow(<NotificationItem />);
 
 it('renders without crashing', () => {
   shallow(<NotificationItem />);
 });
 
-/*
-
 describe('testing', () => {
-  it('Renders without crashing', () => {
+  it('renders without crashing', () => {
     const wrapper = shallow(<NotificationItem />);
     expect(wrapper.exists());
   });
