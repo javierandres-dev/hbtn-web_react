@@ -1,14 +1,15 @@
 import React from 'react';
 
-const NotificationItem = ({ type, html, value }) => {
-  let $li = document.createElement('li');
-  if (value) {
-    $li.setAttribute('data-notification-type', `{type}>{value}`);
-  } else {
-    $li.setAttribute('data-notification-type', `{type}`);
-    $li.setAttribute('dangerouslySetInnerHTML', `{html}`);
-  }
-  return $li;
-};
+function NotificationItem({ type, html, value }) {
+  let li;
+
+  value
+    ? (li = <li data-notification-type={type}>{value}</li>)
+    : (li = (
+        <li data-notification-type={type} dangerouslySetInnerHTML={html}></li>
+      ));
+
+  return li;
+}
 
 export default NotificationItem;
