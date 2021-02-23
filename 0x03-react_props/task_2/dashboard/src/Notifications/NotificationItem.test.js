@@ -2,15 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NotificationItem from './NotificationItem';
 
-describe('testing', () => {
-  it('renders without crashing', () => {
+describe('<NotificationItem />', () => {
+  it('render <NotificationItem /> component', () => {
     const wrapper = shallow(<NotificationItem />);
     expect(wrapper.exists());
   });
 });
 
 /*
-
 const wrapper = shallow(<NotificationItem />);
 
 it('renders without crashing', () => {
@@ -30,6 +29,7 @@ describe('testing', () => {
     expect(li.text()).toEqual('test');
     expect(li.prop('data-notification-type')).toEqual('default');
   });
+
   it('Renders html prop', () => {
     const text = 'Here is the list of notifications';
     const wrapper = shallow(
@@ -38,6 +38,5 @@ describe('testing', () => {
     const li = wrapper.find('li');
     expect(li.html()).toEqual('<li><u>test</u></li>');
   });
-
 });
 */
