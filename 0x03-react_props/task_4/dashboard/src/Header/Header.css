@@ -3,6 +3,8 @@
   color: #e0344a;
   align-items: center;
   border-bottom: thick solid #e0344a;
+  width: 100%;
+  position: fixed;
 }
 
 .header img {

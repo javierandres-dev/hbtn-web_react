@@ -3,12 +3,13 @@ import { shallow } from 'enzyme';
 import Notifications from './Notifications';
 
 describe('<Notification />', () => {
-  const wrapper = shallow(<Notifications />);
   it('renders without crashing', () => {
+    const wrapper = shallow(<Notifications />);
     shallow(<Notifications />);
   });
 
-  it('renders NotificationItem', () => {
+  it('Notification Item with html', () => {
+    const wrapper = shallow(<Notifications displayDrawer />);
     const nItem = wrapper.find('NotificationItem');
     expect(nItem).toBeDefined();
     expect(nItem.first().html()).toEqual(
@@ -16,9 +17,27 @@ describe('<Notification />', () => {
     );
   });
 
-  it('renders the <p>', () => {
-    expect(
-      wrapper.containsMatchingElement(<p>Here is the list of notifications</p>)
-    ).toBeTruthy();
+  it('menuItem with displayDrawer false', () => {
+    const wrapper = shallow(<Notifications />);
+    const mItem = wrapper.find('div.menuItem');
+    expect(mItem).toHaveLength(1);
+  });
+
+  it('Notification with displayDrawer false', () => {
+    const wrapper = shallow(<Notifications />);
+    const dNoti = wrapper.find('div.Notifications');
+    expect(dNoti).toHaveLength(0);
+  });
+
+  it('menuItem with displayDrawer true', () => {
+    const wrapper = shallow(<Notifications displayDrawer />);
+    const mItem = wrapper.find('div.menuItem');
+    expect(mItem).toHaveLength(1);
+  });
+
+  it('displayDrawer is true', () => {
+    const wrapper = shallow(<Notifications displayDrawer />);
+    const dNoti = wrapper.find('div.Notifications');
+    expect(dNoti).toHaveLength(1);
   });
 });

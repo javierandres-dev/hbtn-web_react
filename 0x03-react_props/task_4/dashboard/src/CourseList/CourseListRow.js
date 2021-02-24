@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
+const CourseListRow = ({ isHeader, textFirstCell, textSecondCell }) => {
   let tr = undefined;
 
   if (isHeader === true) {
@@ -26,7 +26,7 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
   }
 
   return <tr>{tr}</tr>;
-}
+};
 
 CourseListRow.defaultProps = {
   isHeader: false,
