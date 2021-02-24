@@ -28,12 +28,12 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Basic components
-* [ ] 1. Write the tests for each component
-* [ ] 2. Split the Notifications component
-* [ ] 3. Checking the application using the React extension
-* [ ] 4. Props types & Default props & Shapes
-* [ ] 5. Shapes, Loops, and Keys
+* [x] 0. Basic components
+* [x] 1. Write the tests for each component
+* [x] 2. Split the Notifications component
+* [x] 3. Checking the application using the React extension
+* [x] 4. Props types & Default props & Shapes
+* [x] 5. Shapes, Loops, and Keys
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

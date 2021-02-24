@@ -4,10 +4,10 @@
 
 ## Projects
 :open_file_folder:
-* [ ] 589 0x00. Typescript
-* [ ] 581 0x01. Webpack
-* [ ] 596 0x02. React intro
-* [ ] 597 0x03. React props
+* [x] 589 0x00. Typescript
+* [x] 581 0x01. Webpack
+* [x] 596 0x02. React intro
+* [x] 597 0x03. React props
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

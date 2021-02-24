@@ -23,10 +23,10 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Basic setup
-* [ ] 1. Learning how to use Webpack with a config file
-* [ ] 2. Adding CSS & Images
-* [ ] 3. Dev servers, modules, and tree shaking
+* [x] 0. Basic setup
+* [x] 1. Learning how to use Webpack with a config file
+* [x] 2. Adding CSS & Images
+* [x] 3. Dev servers, modules, and tree shaking
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

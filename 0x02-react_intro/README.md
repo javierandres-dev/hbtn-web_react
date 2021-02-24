@@ -28,18 +28,18 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Basic application
-* [ ] 1. Embedding expressions, functions
-* [ ] 2. Modify the App
-* [ ] 3. Modify the Notifications
-* [ ] 4. Create basic tests with four tests
-* [ ] 5. Install Enzyme
-* [ ] 6. Create React tests
-* [ ] 7. Deploy to a Github page
-* [ ] 8. Create a project using Webpack
-* [ ] 9. Install Babel
-* [ ] 10. Reorganize the files
-* [ ] 11. Testing
+* [x] 0. Basic application
+* [x] 1. Embedding expressions, functions
+* [x] 2. Modify the App
+* [x] 3. Modify the Notifications
+* [x] 4. Create basic tests with four tests
+* [x] 5. Install Enzyme
+* [x] 6. Create React tests
+* [x] 7. Deploy to a Github page
+* [x] 8. Create a project using Webpack
+* [x] 9. Install Babel
+* [x] 10. Reorganize the files
+* [x] 11. Testing
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

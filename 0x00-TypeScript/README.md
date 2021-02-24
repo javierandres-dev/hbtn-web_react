@@ -25,18 +25,18 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Creating an interface for a student
-* [ ] 1. Let's build a Teacher interface
-* [ ] 2. Extending the Teacher class
-* [ ] 3. Printing teachers
-* [ ] 4. Writing a class
-* [ ] 5. Advanced types Part 1
-* [ ] 6. Creating functions specific to employees
-* [ ] 7. String literal types
-* [ ] 8. Ambient Namespaces
-* [ ] 9. Namespace & Declaration merging
-* [ ] 10. Update task_4/js/main.ts
-* [ ] 11. Brand convention & Nominal typing
+* [x] 0. Creating an interface for a student
+* [x] 1. Let's build a Teacher interface
+* [x] 2. Extending the Teacher class
+* [x] 3. Printing teachers
+* [x] 4. Writing a class
+* [x] 5. Advanced types Part 1
+* [x] 6. Creating functions specific to employees
+* [x] 7. String literal types
+* [x] 8. Ambient Namespaces
+* [x] 9. Namespace & Declaration merging
+* [x] 10. Update task_4/js/main.ts
+* [x] 11. Brand convention & Nominal typing
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
