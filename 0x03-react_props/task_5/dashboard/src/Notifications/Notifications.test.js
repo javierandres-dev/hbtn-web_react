@@ -13,9 +13,6 @@ describe('<Notification />', () => {
     const wrapper = shallow(<Notifications displayDrawer />);
     const nItem = wrapper.find('NotificationItem');
     expect(nItem).toBeDefined();
-    expect(nItem.first().html()).toEqual(
-      '<li data-notification-type="default">New course available</li>'
-    );
   });
 
   it('menuItem with displayDrawer false', () => {
@@ -43,9 +40,10 @@ describe('<Notification />', () => {
   });
 });
 
-describe('listNotifications', () => {
-  let listNotifications = undefined;
+describe('listNotifications with values', () => {
   let latestNotification = undefined;
+  let listNotifications = undefined;
+
   beforeEach(() => {
     latestNotification = getLatestNotification();
     listNotifications = [
@@ -55,7 +53,7 @@ describe('listNotifications', () => {
     ];
   });
 
-  it('Notification Items with html', () => {
+  it('values', () => {
     const wrapper = shallow(
       <Notifications displayDrawer listNotifications={listNotifications} />
     );
@@ -71,6 +69,34 @@ describe('listNotifications', () => {
     );
     expect(nItem.at(2).html()).toEqual(
       `<li data-notification-type="urgent">${latestNotification}</li>`
+    );
+  });
+});
+
+describe('listNotifications without values', () => {
+  let listNotifications = undefined;
+  beforeEach(() => {
+    listNotifications = [];
+  });
+
+  it('empty', () => {
+    const wrapper = shallow(
+      <Notifications displayDrawer listNotifications={listNotifications} />
+    );
+    expect(wrapper.exists());
+    const nItem = wrapper.find('NotificationItem');
+    expect(nItem).toHaveLength(1);
+    expect(nItem.html()).toEqual(
+      '<li data-notification-type="default">No new notification for now</li>'
+    );
+  });
+
+  it('without listNotifications', () => {
+    const wrapper = shallow(<Notifications displayDrawer />);
+    const nItem = wrapper.find('NotificationItem');
+    expect(nItem).toHaveLength(1);
+    expect(nItem.html()).toEqual(
+      '<li data-notification-type="default">No new notification for now</li>'
     );
   });
 });
