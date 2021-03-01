@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 import BodySection from './BodySection';
 import './BodySectionWithMarginBottom.css';
 
-BodySectionWithMarginBottom.defaultProps = {
-  title: '',
-};
-
-BodySectionWithMarginBottom.propTypes = {
-  title: PropTypes.string,
-};
-
 class BodySectionWithMarginBottom extends Component {
   constructor(props) {
     super(props);
@@ -24,5 +16,13 @@ class BodySectionWithMarginBottom extends Component {
     );
   }
 }
+
+BodySectionWithMarginBottom.defaultProps = {
+  title: '',
+};
+
+BodySectionWithMarginBottom.propTypes = {
+  title: PropTypes.string,
+};
 
 export default BodySectionWithMarginBottom;
