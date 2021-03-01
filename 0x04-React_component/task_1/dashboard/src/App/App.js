@@ -18,9 +18,9 @@ class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('keydown', this.handleLogout);
   }
-  handleLogout(event) {
-    if (event.ctrlKey && event.key === 'h') {
-      event.preventDefault();
+  handleLogout(e) {
+    if (e.ctrlKey && e.key === 'h') {
+      e.preventDefault();
       alert('Logging you out');
       this.props.logOut();
     }
@@ -50,10 +50,12 @@ class App extends Component {
 
 App.defaultProps = {
   isLoggedIn: false,
+  logOut: () => undefined,
 };
 
 App.propTypes = {
   isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func,
 };
 
 export default App;
