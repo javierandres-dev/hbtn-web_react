@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Footer from './Footer';
 import { StyleSheetTestUtils } from 'aphrodite';
 
-describe('<App />', () => {
+describe('<Footer />', () => {
   beforeAll(() => {
     StyleSheetTestUtils.suppressStyleInjection();
   });
@@ -11,10 +11,14 @@ describe('<App />', () => {
     StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
   });
 
-  describe('<Footer />', () => {
-    const wrapper = shallow(<Footer />);
-    it('render without crashing', () => {
-      expect(wrapper.exists());
-    });
+  const wrapper = shallow(<Footer />);
+
+  it('render without crashing', () => {
+    expect(wrapper.exists());
+  });
+
+  it('paragraph and content', () => {
+    expect(wrapper.find('footer p')).toHaveLength(1);
+    expect(wrapper.find('footer p').text()).toContain('Copyright');
   });
 });

@@ -55,9 +55,7 @@ class App extends Component {
         <BodySection title='News from the School'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </BodySection>
-        <div>
-          <Footer />
-        </div>
+        <Footer />
       </Fragment>
     );
   }
