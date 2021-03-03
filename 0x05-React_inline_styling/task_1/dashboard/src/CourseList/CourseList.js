@@ -2,6 +2,7 @@ import React from 'react';
 import CourseListRow from './CourseListRow';
 import PropTypes from 'prop-types';
 import CourseShape from './CourseShape';
+import './CourseList.css';
 import { StyleSheet, css } from 'aphrodite';
 
 const CourseList = ({ listCourses }) => {

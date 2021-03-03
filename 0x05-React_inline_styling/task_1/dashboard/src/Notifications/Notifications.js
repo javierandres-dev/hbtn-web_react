@@ -3,6 +3,7 @@ import close_icon from '../assets/close-icon.png';
 import NotificationItem from './NotificationItem';
 import PropTypes from 'prop-types';
 import NotificationItemShape from './NotificationItemShape';
+import './Notifications.css';
 import { StyleSheet, css } from 'aphrodite';
 
 class Notifications extends Component {
@@ -87,12 +88,6 @@ const styles = StyleSheet.create({
     border: 'thin dotted #e0344a',
     padding: '4px 16px',
     float: 'right',
-  },
-  default: {
-    color: 'blue',
-  },
-  urgent: {
-    color: 'red',
   },
   menuItem: {
     textAlign: 'right',
