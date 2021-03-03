@@ -8,6 +8,7 @@ import BodySection from '../BodySection/BodySection';
 import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
 import PropTypes from 'prop-types';
 import { getLatestNotification } from '../utils/utils';
+import { StyleSheet, css } from 'aphrodite';
 
 class App extends Component {
   constructor(props) {
@@ -55,7 +56,9 @@ class App extends Component {
         <BodySection title='News from the School'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </BodySection>
-        <Footer />
+        <div className={css(styles.footer)}>
+          <Footer />
+        </div>
       </Fragment>
     );
   }
@@ -70,5 +73,16 @@ App.propTypes = {
   isLoggedIn: PropTypes.bool,
   logOut: PropTypes.func,
 };
+
+const styles = StyleSheet.create({
+  footer: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0,
+    textAlign: 'center',
+    fontStyle: 'italic',
+    borderTop: 'thick solid #e0344a',
+  },
+});
 
 export default App;
