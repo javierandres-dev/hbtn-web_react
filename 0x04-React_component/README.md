@@ -29,18 +29,18 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Commence with class components
-* [ ] 1. Lifecycles
-* [ ] 2. Handling Events
-* [ ] 3. Reusable comments & specialization
-* [ ] 4. Specialization
-* [ ] 5. Use the new components
-* [ ] 6. Test the new components
-* [ ] 7. Create WithLogging HOC
-* [ ] 8. Write a test for the HOC
-* [ ] 9. Declare a pure component
-* [ ] 10. Make your own pure component
-* [ ] 10. Make your own pure component
+* [x] 0. Commence with class components
+* [x] 1. Lifecycles
+* [x] 2. Handling Events
+* [x] 3. Reusable comments & specialization
+* [x] 4. Specialization
+* [x] 5. Use the new components
+* [x] 6. Test the new components
+* [x] 7. Create WithLogging HOC
+* [x] 8. Write a test for the HOC
+* [x] 9. Declare a pure component
+* [x] 10. Make your own pure component
+* [x] 10. Make your own pure component
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
