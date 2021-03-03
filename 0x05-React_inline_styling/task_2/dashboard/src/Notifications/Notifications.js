@@ -88,12 +88,6 @@ const styles = StyleSheet.create({
     padding: '4px 16px',
     float: 'right',
   },
-  default: {
-    color: 'blue',
-  },
-  urgent: {
-    color: 'red',
-  },
   menuItem: {
     textAlign: 'right',
     marginRight: '16px',
