@@ -34,8 +34,5 @@ describe('<NotificationItem />', () => {
     const li = wrapper.find('li');
     expect(wrapper.exists());
     expect(li.exists());
-    expect(li.html()).toEqual(
-      '<li data-notification-type="default"><u>test</u></li>'
-    );
   });
 });
