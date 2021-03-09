@@ -10,6 +10,7 @@
 * [x] 597 0x03. React props
 * [x] 603 0x04. React component
 * [ ] 607 0x05. React inline styling
+* [ ] 609 0x06. React state
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
