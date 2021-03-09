@@ -35,7 +35,7 @@ describe('<Login />', () => {
     const email = wrapper.find('#email');
     const password = wrapper.find('#password');
     email.simulate('change', {
-      target: { name: 'email', value: 'info@javierandresgp.com' },
+      target: { name: 'email', value: 'account@domain.ext' },
     });
     let submit = wrapper.find("form button[type='submit']");
     expect(submit.prop('disabled')).toEqual(true);
