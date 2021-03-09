@@ -57,4 +57,26 @@ describe('<App />', () => {
     expect(logOut);
     jest.restoreAllMocks();
   });
+
+  it('default state for displayDrawer is false', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+  });
+
+  it('displayDrawer toggle handleDisplayDrawer', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+    const instance = wrapper.instance();
+    instance.handleDisplayDrawer();
+    expect(wrapper.state().displayDrawer).toEqual(true);
+  });
+
+  it('displayDrawer toggle handleDisplayDrawer and handleHideDrawer', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+    wrapper.instance().handleDisplayDrawer();
+    expect(wrapper.state().displayDrawer).toEqual(true);
+    wrapper.instance().handleHideDrawer();
+    expect(wrapper.state().displayDrawer).toEqual(false);
+  });
 });

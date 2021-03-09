@@ -15,16 +15,27 @@ class Notifications extends Component {
   }
   shouldComponentUpdate(nextProps) {
     return (
-      nextProps.listNotifications.length > this.props.listNotifications.length
+      nextProps.listNotifications.length >
+        this.props.listNotifications.length ||
+      nextProps.displayDrawer !== this.props.displayDrawer
     );
   }
 
   render() {
-    const { displayDrawer, listNotifications } = this.props;
+    const {
+      displayDrawer,
+      listNotifications,
+      handleDisplayDrawer,
+      handleHideDrawer,
+    } = this.props;
     const show = css(displayDrawer ? styles.showOff : styles.showOn);
     return (
       <Fragment>
-        <div className={css(styles.menuItem)}>
+        <div
+          className={css(styles.menuItem)}
+          onClick={handleDisplayDrawer}
+          id='menuItem'
+        >
           <p className={show}>Your notifications</p>
         </div>
         {displayDrawer && (
@@ -47,7 +58,8 @@ class Notifications extends Component {
             <button
               type='button'
               aria-label='Close'
-              onClick={() => console.log('Close button has been clicked')}
+              onClick={handleHideDrawer}
+              id='close'
               style={{
                 display: 'inline-block',
                 position: 'absolute',
@@ -76,11 +88,15 @@ class Notifications extends Component {
 Notifications.defaultProps = {
   displayDrawer: false,
   listNotifications: [],
+  handleDisplayDrawer: () => {},
+  handleHideDrawer: () => {},
 };
 
 Notifications.propTypes = {
   displayDrawer: PropTypes.bool,
   listNotifications: PropTypes.arrayOf(NotificationItemShape),
+  handleDisplayDrawer: PropTypes.func,
+  handleHideDrawer: PropTypes.func,
 };
 
 const screenSize = {

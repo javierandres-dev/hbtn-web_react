@@ -171,3 +171,43 @@ describe('updating the props of the component', () => {
     jest.restoreAllMocks();
   });
 });
+
+describe('displayDrawer', () => {
+  beforeAll(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
+  });
+  afterAll(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+  });
+
+  it('clicking on the menu item calls handleDisplayDrawer', () => {
+    const handleDisplayDrawer = jest.fn();
+    const handleHideDrawer = jest.fn();
+    const wrapper = shallow(
+      <Notifications
+        handleDisplayDrawer={handleDisplayDrawer}
+        handleHideDrawer={handleHideDrawer}
+      />
+    );
+    wrapper.find('#menuItem').simulate('click');
+    expect(handleDisplayDrawer).toHaveBeenCalled();
+    expect(handleHideDrawer).not.toHaveBeenCalled();
+    jest.restoreAllMocks();
+  });
+
+  it('clicking on the button calls handleHideDrawer', () => {
+    const handleDisplayDrawer = jest.fn();
+    const handleHideDrawer = jest.fn();
+    const wrapper = shallow(
+      <Notifications
+        displayDrawer
+        handleDisplayDrawer={handleDisplayDrawer}
+        handleHideDrawer={handleHideDrawer}
+      />
+    );
+    wrapper.find('#close').simulate('click');
+    expect(handleDisplayDrawer).not.toHaveBeenCalled();
+    expect(handleHideDrawer).toHaveBeenCalled();
+    jest.restoreAllMocks();
+  });
+});
