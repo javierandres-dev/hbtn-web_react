@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Header from './Header';
 import { StyleSheetTestUtils } from 'aphrodite';
 import { user, logOut, AppContext } from '../App/AppContext';
@@ -17,9 +17,8 @@ describe('<Header />', () => {
     expect(wrapper.exists());
   });
 */
-
   it('Header renders without crashing', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <AppContext.Provider value={{ user, logOut }}>
         <Header />
       </AppContext.Provider>
