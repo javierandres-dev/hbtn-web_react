@@ -33,11 +33,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Adding a local state for notifications
-* [ ] 1. Controlled components and state callback
-* [ ] 2. Context
-* [ ] 3. Context consumer & advanced state
-* [ ] 4. Introduction to react hook
+* [x] 0. Adding a local state for notifications
+* [x] 1. Controlled components and state callback
+* [x] 2. Context
+* [x] 3. Context consumer & advanced state
+* [x] 4. Introduction to react hook
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

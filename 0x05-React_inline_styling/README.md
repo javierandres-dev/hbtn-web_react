@@ -27,11 +27,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Inline styling
-* [ ] 1. install Aphrodite
-* [ ] 2. Conditionally applying style
-* [ ] 3. Responsive design
-* [ ] 4. Animation
+* [x] 0. Inline styling
+* [x] 1. install Aphrodite
+* [x] 2. Conditionally applying style
+* [x] 3. Responsive design
+* [x] 4. Animation
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
