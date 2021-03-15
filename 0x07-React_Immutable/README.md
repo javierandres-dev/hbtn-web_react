@@ -23,15 +23,15 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Converting into an Immutable object using fromJS
-* [ ] 1. Converting into Immutable using Map
-* [ ] 2. Accessing nested elements
-* [ ] 3. List and push
-* [ ] 4. Chained mutations
-* [ ] 5. Merge & concat
-* [ ] 6. Nested merge
-* [ ] 7. Equality
-* [ ] 8. Lazy Seq
+* [x] 0. Converting into an Immutable object using fromJS
+* [x] 1. Converting into Immutable using Map
+* [x] 2. Accessing nested elements
+* [x] 3. List and push
+* [x] 4. Chained mutations
+* [x] 5. Merge & concat
+* [x] 6. Nested merge
+* [x] 7. Equality
+* [x] 8. Lazy Seq
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
