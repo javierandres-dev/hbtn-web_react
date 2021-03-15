@@ -3,24 +3,23 @@ import { Seq } from 'immutable';
 const printBestStudents = (object) => {
   const seq = Seq(object);
 
-  console.log(
-    seq
-      .filter((value) => value.score > 70)
-      .map((key) =>
-        Map(key).withMutations((elem) => {
-          elem
-            .set(
-              'firstName',
-              key.firstName.charAt(0).toUpperCase() + key.firstName.slice(1)
-            )
-            .set(
-              'lastName',
-              key.lastName.charAt(0).toUpperCase() + key.lastName.slice(1)
-            );
-        })
-      )
-      .toJS()
-  );
+  const getStudent = seq.filter((value) => {
+    value.firstName.charAt(0).toUpperCase();
+    return value.score > 70;
+  });
+
+  const student = getStudent.toJS();
+
+  const formatName = (string) =>
+    string.charAt(0).toUpperCase() + string.slice(1);
+
+  Object.keys(student).map((key) => {
+    student[key].firstName = formatName(student[key].firstName);
+    student[key].lastName = formatName(student[key].lastName);
+    return student[key];
+  });
+
+  console.log(student);
 };
 
 export default printBestStudents;
