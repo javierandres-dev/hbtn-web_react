@@ -12,6 +12,7 @@
 * [x] 607 0x05. React inline styling
 * [x] 609 0x06. React state
 * [x] 608 0x07. React Immutable
+* [ ] 611 0x08. React Redux action creator+normalizr
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
