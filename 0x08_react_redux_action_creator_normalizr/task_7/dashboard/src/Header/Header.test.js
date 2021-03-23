@@ -11,12 +11,7 @@ describe('<Header />', () => {
   afterAll(() => {
     StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
   });
-  /*
-  it('render without crashing', () => {
-    const wrapper = shallow(<Header />);
-    expect(wrapper.exists());
-  });
-*/
+
   it('Header renders without crashing', () => {
     const wrapper = shallow(
       <AppContext.Provider value={{ user, logOut }}>

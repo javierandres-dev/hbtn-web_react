@@ -8,12 +8,7 @@ describe('<Footer />', () => {
     const wrapper = shallow(<Footer />);
     expect(wrapper.exists());
   });
-  /*
-  it('paragraph and content', () => {
-    expect(wrapper.find('footer p')).toHaveLength(1);
-    expect(wrapper.find('footer p').text()).toContain('Copyright');
-  });
-*/
+
   it('logged out within the context', () => {
     const wrapper = shallow(
       <AppContext.Provider value={{ user, logOut }}>

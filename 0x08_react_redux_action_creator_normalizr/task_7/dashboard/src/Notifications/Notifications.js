@@ -8,20 +8,7 @@ import { StyleSheet, css } from 'aphrodite';
 class Notifications extends PureComponent {
   constructor(props) {
     super(props);
-    //this.markAsRead = this.markAsRead.bind(this);
   }
-  /*
-  markAsRead(id) {
-    console.log(`Notification ${id} has been marked as read`);
-  }
-  shouldComponentUpdate(nextProps) {
-    return (
-      nextProps.listNotifications.length >
-        this.props.listNotifications.length ||
-      nextProps.displayDrawer !== this.props.displayDrawer
-    );
-  }
-*/
   render() {
     const {
       displayDrawer,

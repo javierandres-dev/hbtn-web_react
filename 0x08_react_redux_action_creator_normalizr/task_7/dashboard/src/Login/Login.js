@@ -75,25 +75,6 @@ class Login extends Component {
     );
   }
 }
-/*
-<label htmlFor='email'>Email:</label>
-        <input
-          className={css(styles.inp)}
-          type='email'
-          name='email'
-          id='email'
-        />
-        <label htmlFor='password'>Password:</label>
-        <input
-          className={css(styles.inp)}
-          type='password'
-          name='password'
-          id='password'
-        />
-        <button className={css(styles.btn)} type='button'>
-          OK
-        </button>
-*/
 const screenSize = {
   small: '@media screen and (max-width: 900px)',
 };
