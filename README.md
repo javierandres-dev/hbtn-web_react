@@ -13,6 +13,7 @@
 * [x] 609 0x06. React state
 * [x] 608 0x07. React Immutable
 * [x] 611 0x08. React Redux action creator+normalizr
+* [ ] 612 0x09. React Redux reducer+selector
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
