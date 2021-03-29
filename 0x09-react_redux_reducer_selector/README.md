@@ -27,12 +27,12 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Write a basic reducer
-* [ ] 1. Use Immutable for the UI Reducer
-* [ ] 2. Create a reducer for Courses
-* [ ] 3. Create the reducer for notifications
-* [ ] 4. Normalizr & Immutable
-* [ ] 5. Selectors
+* [x] 0. Write a basic reducer
+* [x] 1. Use Immutable for the UI Reducer
+* [x] 2. Create a reducer for Courses
+* [x] 3. Create the reducer for notifications
+* [x] 4. Normalizr & Immutable
+* [x] 5. Selectors
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
